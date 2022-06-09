@@ -19,8 +19,6 @@ class PostAdmin(admin.ModelAdmin):
 
 class GroupAdmin(admin.ModelAdmin):
     list_display = ('pk', 'title', 'slug', 'description')
-# При регистрации модели Post источником конфигурации для неё назначаем
-# класс PostAdmin
 
 
 admin.site.register(Post, PostAdmin)

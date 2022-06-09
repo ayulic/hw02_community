@@ -2,11 +2,11 @@ from django.shortcuts import render, get_object_or_404
 
 from .models import Post, Group
 
-POSTS_ON_LIST = 10
+POSTS_ON_LIST: int = 10
 
 
 def index(request):
-    posts = Post.objects.select_related().all()[:POSTS_ON_LIST]
+    posts = Post.objects.select_related('group')[:POSTS_ON_LIST]
     context = {
         'posts': posts,
     }
