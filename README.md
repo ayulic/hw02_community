@@ -1,3 +1,14 @@
-# backend_community_homework
+# **Социальная сеть Yatube для блогеров**
+Промежуточная работа.
 
-[![CI](https://github.com/yandex-praktikum/hw02_community/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw02_community/actions/workflows/python-app.yml)
+Создано и зарегистрировано приложение Posts.
+Подключена база данных.
+Десять последних записей выводятся на главную страницу.
+В админ-зоне доступно управление объектами модели Post: можно публиковать новые записи или редактировать/удалять существующие.
+Пользователь может перейти на страницу любого сообщества, где отображаются десять последних публикаций из этой группы.
+
+# **Как запустить проект:**
+
+Клонировать репозиторий:
+```
+git clone git@github.com:Lakrica22/hw02_community.git
