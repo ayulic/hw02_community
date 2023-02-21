@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block title %}
+<title>{{ title }}</title>
+{% endblock %} 
+
+{% block content %}
+<h1>{{ text }}</h>
+{% for char in text %}
+    {% if forloop.first %}
+      <p>Начало цикла</p>
+    {% endif %}
+    <p>{{ char }}</p>
+    <p>counter0 = {{ forloop.counter0 }}, counter = {{forloop.counter }}</p>
+    {# forloop хранит счётчик цикла и может определять разные состояния счётчика #}
+    {% if forloop.last %}
+      <p>Конец цикла</p>
+    {% endif %}
+{% empty %}
+    <p>Если цикл пуст</p>
+  {% endfor %}    
+{% endblock %} 
